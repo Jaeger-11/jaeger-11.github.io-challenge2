@@ -1,0 +1,122 @@
+body{
+    background-image: url(images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    width: 1440px;
+    margin: auto auto;
+    box-sizing: border-box;
+    color: white;
+    font-family: Open Sans;
+    font-weight: 400;
+}
+
+.holder{
+    padding: 20px;
+}
+
+.flexbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.imageholder{
+    padding: 10px;
+}
+
+.imageholder img{
+    width: 100%;
+}
+
+section{
+    padding: 50px 20px;
+    display: flex;
+    justify-items: center;
+    /* align-items: center; */
+}
+
+.auto{
+    margin: 5px 10px 0px 10px;
+    padding: 5px;
+}
+
+header{
+    font-size: xx-large;
+    line-height: 40px;
+    font-weight: bold;
+    font-family:Poppins;
+    padding: 5px;
+}
+
+.paragraph{
+    font-size: larger;
+    padding: 5px;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    color: gray;
+}
+
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.icons{
+    text-align: right;
+    margin: 0px 40px;
+    padding: 5px;
+}
+
+i{
+    padding: 10px;
+    border-radius: 50%;
+    border: white solid 1px;
+    margin: 0px 5px;
+
+}
+
+i:hover{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+@media (max-width: 1440px){
+    body{
+        width: auto;
+    }
+}
+
+@media (max-width: 450px){
+    .flexbox{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 3px;
+    }
+    header, .paragraph{
+        text-align: center;
+        padding: 2px;
+    }
+    body{
+        background-image: url(images/bg-mobile.svg);
+    }
+    section{
+        text-align: center;
+    }
+    header{
+        font-size: x-large;
+        line-height: normal;
+    }
+    .auto{
+        padding: 0px;
+        margin: 3px;
+    }
+    .icons{
+        text-align: center;
+    }
+}
